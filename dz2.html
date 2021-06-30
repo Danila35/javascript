@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    "use strict";
+   const buket = [
+        ["Компьютер", 120000, 1],
+        ["Монитор", 15000, 2],
+        ["Клавиатура", 3500, 1]
+        ["Мышка", 3000, 1]
+   ];
+  function pricebuket(buket) {
+    let allPrice = 0
+    for (let i = 0; i < buket.lenght; i++) {
+        allPrice += buket[i][1] * buket[i][2] * buket[i][3] * buket[i][4];
+    }
+    return allPrice;
+  }
+console.log(pricebuket(buket))
+</body>
+</html>
